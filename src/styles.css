@@ -1,0 +1,34 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  :root {
+    --primary-color: #ccd1e4;
+  }
+  
+  .accordion {
+    max-width: 15rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .accordion button {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .accordion button:hover {
+    background: var(--primary-color);
+  }
+  
+  .accordion .content {
+    padding: 0.5rem;
+    background: #f7f7f7;
+  }
+  
