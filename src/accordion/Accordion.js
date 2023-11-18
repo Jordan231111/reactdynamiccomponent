@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import '../styles.css';
 
-const Accordion = ({ headers, defaultContent = 'Sample text', onHeaderChange }) => {
+const Accordion = ({ headers = [], defaultContent = 'Sample text', onHeaderChange }) => {
     const [expandedIndex, setExpandedIndex] = useState(null);
 
     const toggleExpand = (index) => {
-        setExpandedIndex(index === expandedIndex ? null : index);
+        setExpandedIndex(prevIndex => prevIndex === index ? null : index);
     };
 
     const handleAddHeader = () => {
